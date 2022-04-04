@@ -20,7 +20,7 @@ public class TicTacToeGame {
         }
     }
 
-    void drawBoard(char[][] board) {
+    static void drawBoard(char[][] board) {
         System.out.println("Board:");
         for (char[] chars : board) {
             for (char aChar : chars) {
@@ -61,6 +61,9 @@ public class TicTacToeGame {
         }
     }
 
-
+    public static void main(String[] args) {
+        populate();
+        drawBoard(board);
+    }
 
 }
